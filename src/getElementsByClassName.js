@@ -11,8 +11,8 @@ var getElementsByClassName = function(className){
 
 
 // Run thru body, if childNode has className, push chlildNode to result; 
-// if childNode has childNode, recurse as if childNode is body
-// this will require an inner-fn that takes the elmt to run-thru as the arg (?)
+// if childNode has childNode, recurse with childNode
+// this will require an inner-fn that takes the elmt to run-thru as the arg 
 var walk = function(elmt) {
 
 		if($(elmt).hasClass(className)) {
